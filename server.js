@@ -5,6 +5,7 @@ var express = require('express'),
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors());
 
 var routes = require('./api/routes/theoryhqRoutes');
 routes(app);
