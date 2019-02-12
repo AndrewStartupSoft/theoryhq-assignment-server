@@ -3,6 +3,9 @@
 module.exports = function(app) {
 	var projectsList = require('../controllers/theoryhqController');
 	
+	app.route('/')
+		.get();		
+
 	app.route('/projects')
 		.get(projectsList.getProjectsList);		
 
